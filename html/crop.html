@@ -1,0 +1,25 @@
+<md-dialog aria-label="ResizeImage" class="wmin-md crop-dialog">
+    <form name="projectForm" ng-submit="ctrl.answer()">
+        <md-toolbar>    
+            <div class="md-toolbar-tools">
+                <h2 flex>Redimensionnez l'image</h2>
+                <md-button ng-click="ctrl.cancel()" aria-label="Cancel" class="md-icon-button">
+                    <md-icon md-svg-src="/assets/icons/times.svg"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-dialog-content layout="column" layout-align="center center" md-theme="dark" class="md-hue-1">
+            <crop image="ctrl.image" select="ctrl.cropped($image)" ratio="ctrl.ratio" width="ctrl.width" maxWidth="ctrl.maxWidth"></crop>
+        </md-dialog-content>
+        <md-dialog-actions layout>
+            <md-button ng-click="ctrl.rotateLeft()" aria-label="Rotate left" class="md-icon-button">
+                <md-icon md-svg-src="/assets/icons/undo.svg"></md-icon>
+            </md-button>
+            <md-button ng-click="ctrl.rotateRight()" aria-label="Rotate right" class="md-icon-button">
+                <md-icon md-svg-src="/assets/icons/repeat.svg"></md-icon>
+            </md-button>
+            <span flex></span>
+            <md-button type="submit" class="md-primary" aria-label="Validate">Valider</md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>

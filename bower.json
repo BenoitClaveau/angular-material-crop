@@ -1,0 +1,15 @@
+{
+  "name": "angular-material-crop",
+  "homepage": "https://github.com/beny78/angular-material-crop",
+  "authors": [
+    "Benoît Claveau <beny78@gmail.com>"
+  ],
+  "description": "Crop image with angular material",
+  "main": "directives/buttoncrop.js",
+  "keywords": [
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular-material": "#master"
+  }
+}
